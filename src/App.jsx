@@ -26,7 +26,7 @@ function App() {
   const handleChange = (event) => {
     const newQuery = event.target.value
     setQuiery(newQuery);
-    debouncedGetMovies({ newQuery })
+    debouncedGetMovies(newQuery)
   };
   const handleSort = () => {
     setSort(!sort);
